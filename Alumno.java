@@ -11,9 +11,19 @@ public class Alumno {
      * Crea un alumno nuevo
      */
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
-        nombre = nombreCompleto;
-        numeroMatricula = numeroMatriculaAlumno;
-        edad = edadAlumno;
+        if(nombreCompleto.length() < 3){
+            System.out.println("Error, el nombre debe ser minimo de 3 caracteres");
+        }
+        else {
+        nombre = nombreCompleto;        
+        }
+        if(numeroMatriculaAlumno.length() < 4){
+            System.out.println("Error, la matricula debe ser minimo de 4 caracteres");
+        }
+        else {
+            numeroMatricula = numeroMatriculaAlumno;
+        }
+        edad = edadAlumno;        
     }
 
     /**
