@@ -13,12 +13,14 @@ public class Alumno {
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
         if(nombreCompleto.length() < 3){
             System.out.println("Error, el nombre debe ser minimo de 3 caracteres");
+            nombre = nombreCompleto;
         }
         else {
         nombre = nombreCompleto;        
         }
         if(numeroMatriculaAlumno.length() < 4){
             System.out.println("Error, la matricula debe ser minimo de 4 caracteres");
+            numeroMatricula = numeroMatriculaAlumno;
         }
         else {
             numeroMatricula = numeroMatriculaAlumno;
